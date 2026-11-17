@@ -76,18 +76,28 @@
       '</span>' +
       '<span class="nav-brand-text">AURALIS</span>' +
       '</a>' +
-      '<nav class="main-nav" id="primary-nav" aria-label="Primary navigation">' + navMarkup + '</nav>' +
+      '<nav class="main-nav" id="primary-nav" aria-label="Primary navigation">' +
+      navMarkup +
+      '<div class="menu-dropdown-tools">' +
+      '<button class="menu-tool-btn" type="button" data-theme-toggle aria-label="Switch to dark mode">' +
+      '<span data-theme-icon>' + icons.moon + '</span><span data-theme-text>Dark mode</span>' +
+      '</button>' +
+      '<button class="menu-tool-btn" type="button" data-dir-toggle aria-label="Switch to right-to-left layout">' +
+      icons.swap + '<span data-dir-label>RTL</span>' +
+      '</button>' +
+      '</div>' +
+      '</nav>' +
       '<div class="nav-right-group">' +
-      '<div class="nav-tools">' +
+      '<div class="nav-tools nav-tools-desktop">' +
       '<button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Toggle dark / light mode">' +
       '<span data-theme-icon>' + icons.moon + '</span>' +
       '</button>' +
       '<button class="icon-btn dir-btn" type="button" data-dir-toggle aria-label="Switch to right-to-left layout" title="Toggle writing direction">' +
-      '<span data-dir-label>RTL</span>' +
+       '<span data-dir-label>RTL</span>' +
       '</button>' +
       '</div>' +
-      '<a class="nav-pill-cta" href="' + url("pages/contact.html") + '#appointment">' +
-      '<span>Book appointment</span><span class="cta-arrow">↗</span>' +
+      '<a class="nav-pill-cta" href="' + url("pages/contact.html") + '#appointment" aria-label="Book appointment" title="Book appointment">' +
+      '<span class="cta-text">Book appointment</span><span class="cta-arrow">↗</span>' +
       '</a>' +
       '<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>' +
       '</div>' +
@@ -183,17 +193,20 @@
     });
   }
 
-  var themeButton = document.querySelector("[data-theme-toggle]");
-  var themeIcon = document.querySelector("[data-theme-icon]");
   function syncThemeButton() {
     var theme = document.documentElement.getAttribute("data-theme") || "light";
-    if (!themeButton) return;
-    themeButton.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
-    themeButton.setAttribute("aria-pressed", String(theme === "dark"));
-    if (themeIcon) themeIcon.innerHTML = theme === "dark" ? icons.sun : icons.moon;
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
+      btn.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+      btn.setAttribute("aria-pressed", String(theme === "dark"));
+      var icon = btn.querySelector("[data-theme-icon]");
+      if (icon) icon.innerHTML = theme === "dark" ? icons.sun : icons.moon;
+      var text = btn.querySelector("[data-theme-text]");
+      if (text) text.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+    });
   }
-  if (themeButton) {
-    themeButton.addEventListener("click", function () {
+
+  document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
       document.documentElement.classList.add("theme-transitioning");
       var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
@@ -208,20 +221,21 @@
         document.documentElement.classList.remove("theme-transitioning");
       }, 400);
     });
-  }
+  });
   syncThemeButton();
 
-  var dirButton = document.querySelector("[data-dir-toggle]");
-  var dirLabel = document.querySelector("[data-dir-label]");
   function syncDirButton() {
     var dir = document.documentElement.getAttribute("dir") || "ltr";
-    if (!dirButton) return;
-    dirButton.setAttribute("aria-label", dir === "rtl" ? "Switch to left-to-right layout" : "Switch to right-to-left layout");
-    dirButton.setAttribute("aria-pressed", String(dir === "rtl"));
-    if (dirLabel) dirLabel.textContent = dir === "rtl" ? "LTR" : "RTL";
+    document.querySelectorAll("[data-dir-toggle]").forEach(function (btn) {
+      btn.setAttribute("aria-label", dir === "rtl" ? "Switch to left-to-right layout" : "Switch to right-to-left layout");
+      btn.setAttribute("aria-pressed", String(dir === "rtl"));
+      var label = btn.querySelector("[data-dir-label]");
+      if (label) label.textContent = dir === "rtl" ? "LTR" : "RTL";
+    });
   }
-  if (dirButton) {
-    dirButton.addEventListener("click", function () {
+
+  document.querySelectorAll("[data-dir-toggle]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
       var next = document.documentElement.getAttribute("dir") === "rtl" ? "ltr" : "rtl";
       document.documentElement.setAttribute("dir", next);
       try {
@@ -232,7 +246,7 @@
       syncDirButton();
       document.dispatchEvent(new CustomEvent("auralis:dirchange", { detail: { dir: next } }));
     });
-  }
+  });
   syncDirButton();
 
   /* ---------- Scroll listener (header elevation, progress bar, back to top) ---------- */
