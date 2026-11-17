@@ -377,7 +377,7 @@ window.AURALIS = (function () {
       author: "Dr. Noah Bennett",
       role: "Consultant Audiologist",
       read: "5 min read",
-      image: "https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=1400&q=85",
+      image: "../assets/service.jpeg",
       excerpt: "Hearing loss usually arrives slowly. These everyday signals are easy to dismiss and worth taking seriously.",
       tags: ["hearing", "hearing test", "audiology"],
       content: [
@@ -406,7 +406,7 @@ window.AURALIS = (function () {
       author: "Dr. Priya Raman",
       role: "ENT & Sleep Physician",
       read: "7 min read",
-      image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1400&q=85",
+      image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1400&q=85",
       excerpt: "Not all snoring is harmless, and not all tiredness is just a busy week. Here is how to tell the difference.",
       tags: ["sleep", "snoring", "airway"],
       content: [
@@ -458,7 +458,7 @@ window.AURALIS = (function () {
       author: "Dr. Elena Marsh",
       role: "Consultant Laryngologist",
       read: "5 min read",
-      image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1400&q=85",
+      image: "../assets/doc.jpeg",
       excerpt: "Teachers, trainers and performers share one occupational risk: voice strain. Small routines make a real difference.",
       tags: ["voice", "throat", "vocal health"],
       content: [
@@ -483,7 +483,7 @@ window.AURALIS = (function () {
       author: "Dr. Noah Bennett",
       role: "Paediatric ENT Consultant",
       read: "6 min read",
-      image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1400&q=85",
+      image: "../assets/blog.jpeg",
       excerpt: "A calm guide for parents navigating recurring ear infections, glue ear and the grommet conversation.",
       tags: ["children", "ear infection", "glue ear"],
       content: [
