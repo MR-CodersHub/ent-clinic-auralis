@@ -30,6 +30,7 @@
       if (count) count.textContent = items.length + (items.length === 1 ? " service" : " services");
       var empty = document.getElementById("services-empty");
       if (empty) empty.hidden = items.length > 0;
+      document.dispatchEvent(new CustomEvent("auralis:render"));
     }
 
     document.querySelectorAll("[data-service-filter]").forEach(function (button) {

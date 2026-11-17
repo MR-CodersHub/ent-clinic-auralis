@@ -160,6 +160,7 @@
       if (featuredSection) featuredSection.hidden = isFiltered;
       renderFeatured(featured);
       blogGrid.innerHTML = rest.map(cardMarkup).join("");
+      document.dispatchEvent(new CustomEvent("auralis:render"));
       if (emptyHost) emptyHost.hidden = filtered.length > 0;
       if (resultsHost) {
         var label = filtered.length === 1 ? "article" : "articles";
