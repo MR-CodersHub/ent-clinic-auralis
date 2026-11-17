@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to the Auralis patient portal to view appointments, letters and care plans.">
+  <title>Patient login | Auralis ENT Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="../src/js/theme-init.js"></script>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="stylesheet" href="../src/css/pages.css">
+</head>
+<body>
+<div data-site-header></div>
+<main>
+  <section class="page-hero hero-auth">
+    <div class="container page-hero-content">
+      <div class="eyebrow light"><i></i> PATIENT PORTAL</div>
+      <h1>Your care,<br><em>in one place.</em></h1>
+      <p>Appointments, clinic letters and care plans — available when you need them.</p>
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span>/</span><span>Patient login</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="auth-grid">
+        <div class="auth-side">
+          <div class="eyebrow light"><i></i> SECURE ACCESS</div>
+          <h2>A calmer way to<br><em>stay organised.</em></h2>
+          <p>Check upcoming appointments, download your clinic letters and revisit the plan you agreed with your consultant.</p>
+          <ul class="check-list" style="margin-top:22px">
+            <li style="color:#c9dbe3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Encrypted and multi-factor protected</li>
+            <li style="color:#c9dbe3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>No marketing profiling</li>
+            <li style="color:#c9dbe3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Support from a real reception team</li>
+          </ul>
+        </div>
+
+        <form class="auth-card" id="login-form" aria-labelledby="login-title">
+          <div class="eyebrow"><i></i> WELCOME BACK</div>
+          <h2 id="login-title">Sign in.</h2>
+          <p>Use the email address you gave the clinic. This demonstration does not create a real session.</p>
+          <div class="form-status" data-form-status hidden></div>
+          <label for="login-email">Email address
+            <input type="email" id="login-email" name="email" placeholder="name@example.com" required autocomplete="email">
+          </label>
+          <label for="login-password">Password
+            <input type="password" id="login-password" name="password" placeholder="At least 6 characters" required minlength="6" autocomplete="current-password">
+          </label>
+          <label class="consent" for="login-remember">
+            <input type="checkbox" id="login-remember" name="remember">
+            <span>Keep me signed in on this device</span>
+          </label>
+          <button class="button button-primary submit-button" type="submit">Sign in securely <span>↗</span></button>
+          <p class="auth-alt">New to Auralis? <a href="signup.html">Create a patient account</a>.</p>
+          <p class="auth-alt">Trouble signing in? <a href="contact.html">Contact reception</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight bg-soft">
+    <div class="container">
+      <div class="section-heading center">
+        <div>
+          <div class="eyebrow"><i></i> WHY USE THE PORTAL</div>
+          <h2>Less admin,<br><em>more clarity.</em></h2>
+        </div>
+        <p>Everything is designed to be simple, readable and quick to find.</p>
+      </div>
+      <div class="grid cols-3">
+        <article class="info-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M8 2v4M16 2v4M3 9h18"></path></svg></div>
+          <h3>Appointments</h3>
+          <p>See confirmed dates, clinic locations and pre-visit notes in one list.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></div>
+          <h3>Letters and plans</h3>
+          <p>Download the same written summary you received after your appointment.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+          <h3>Privacy controls</h3>
+          <p>Manage communication preferences and see how your data is handled.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="eyebrow"><i></i> NEED A HAND?</div>
+        <h2>Technology should not<br><em>get in the way.</em></h2>
+        <p class="lead-text">If you cannot sign in, cannot remember which email you used, or simply prefer to speak to a person, call reception. We will not judge the question.</p>
+        <div class="grid cols-2 mt-5">
+          <div class="info-card"><h3>Call us</h3><p>+44 113 496 0720<br>Monday to Friday, 8:30am – 6:00pm</p></div>
+          <div class="info-card"><h3>Email us</h3><p>hello@auralisclinic.com<br>We reply within one working day.</p></div>
+        </div>
+      </div>
+      <div class="map-card" style="padding:0">
+        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1000&q=85" alt="Auralis reception team helping a patient with the patient portal" style="width:100%;height:350px;object-fit:cover;display:block">
+      </div>
+    </div>
+  </section>
+
+  <section class="appointment-banner">
+    <div class="container appointment-inner">
+      <div>
+        <div class="eyebrow"><i></i> NO ACCOUNT YET?</div>
+        <h2>Register in<br><em>a minute.</em></h2>
+      </div>
+      <a class="button button-primary" href="signup.html">Create an account <span>↗</span></a>
+    </div>
+  </section>
+</main>
+<div data-site-footer></div>
+<script src="../src/js/navbar.js"></script>
+<script src="../src/js/pages.js"></script>
+<script src="../src/js/form-validation.js"></script>
+</body>
+</html>

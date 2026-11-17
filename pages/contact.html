@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Auralis ENT Clinic in Chapel Allerton, Leeds. Request an appointment, find the clinic or call our reception team.">
+  <title>Contact &amp; appointments | Auralis ENT Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="../src/js/theme-init.js"></script>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="stylesheet" href="../src/css/pages.css">
+</head>
+<body>
+<div data-site-header></div>
+<main>
+  <section class="page-hero hero-contact">
+    <div class="container page-hero-content">
+      <div class="eyebrow light"><i></i> COME AND SEE US</div>
+      <h1>Let's get you<br><em>feeling better.</em></h1>
+      <p>Book an appointment, ask a question or find your way to the clinic. A real person will reply — usually within one working day.</p>
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span>/</span><span>Contact</span></div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="appointment">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <div class="eyebrow"><i></i> REQUEST AN APPOINTMENT</div>
+        <h2>Tell us what<br><em>you have noticed.</em></h2>
+        <p class="lead">A short description helps us match you with the right consultant and allow enough time for your first appointment.</p>
+
+        <div class="contact-method">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9Z"></path></svg></div>
+          <div><small>CALL RECEPTION</small><strong>+44 113 496 0720</strong><p>Monday to Friday, 8:30am – 6:00pm</p></div>
+        </div>
+        <div class="contact-method">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg></div>
+          <div><small>EMAIL US</small><strong>hello@auralisclinic.com</strong><p>For non-urgent questions and records</p></div>
+        </div>
+        <div class="contact-method">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+          <div><small>VISIT US</small><strong>18 Harrogate Road, Chapel Allerton</strong><p>Leeds LS7 3PD · free on-site parking</p></div>
+        </div>
+
+        <div class="hours-box">
+          <strong>Opening hours</strong>
+          <div><span>Monday – Thursday</span><b>8:30am – 6:00pm</b></div>
+          <div><span>Friday</span><b>8:30am – 5:00pm</b></div>
+          <div><span>Saturday</span><b>9:00am – 1:00pm</b></div>
+          <div><span>Sunday</span><b>Closed</b></div>
+        </div>
+      </div>
+
+      <form class="form-card" id="appointment-form" aria-labelledby="contact-form-title">
+        <div class="form-heading">
+          <span>APPOINTMENT REQUEST</span>
+          <h3 id="contact-form-title">How can we help?</h3>
+          <p>Fields marked as required must be completed. We never share your details.</p>
+        </div>
+        <div class="form-status" data-form-status hidden></div>
+        <div class="form-row">
+          <label for="contact-name">Full name
+            <input type="text" id="contact-name" name="name" placeholder="Your full name" required autocomplete="name">
+          </label>
+          <label for="contact-email">Email address
+            <input type="email" id="contact-email" name="email" placeholder="name@example.com" required autocomplete="email">
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="contact-phone">Phone number
+            <input type="tel" id="contact-phone" name="phone" placeholder="+44 7000 000000" required autocomplete="tel">
+          </label>
+          <label for="contact-date">Preferred date
+            <input type="date" id="appointment-date" name="date" required>
+          </label>
+        </div>
+        <label for="contact-service">Service
+          <select id="contact-service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="ear-hearing">Ear &amp; hearing care</option>
+            <option value="nose-sinus">Nose &amp; sinus care</option>
+            <option value="throat-voice">Throat &amp; voice care</option>
+            <option value="allergy-care">Allergy &amp; immunology</option>
+            <option value="sleep-breathing">Sleep &amp; breathing</option>
+            <option value="pediatric-ent">Paediatric ENT</option>
+            <option value="not-sure">I am not sure</option>
+          </select>
+        </label>
+        <label for="contact-message">What have you noticed?
+          <textarea id="contact-message" name="message" rows="4" placeholder="A short description of your symptoms, how long they have been present and anything you have already tried." required minlength="10"></textarea>
+        </label>
+        <label class="consent" for="contact-consent">
+          <input type="checkbox" id="contact-consent" name="consent" required>
+          <span>I agree to Auralis storing these details to respond to my enquiry, as described in the <a href="Privacy-policy.html">privacy policy</a>.</span>
+        </label>
+        <button class="button button-primary submit-button" type="submit">Send appointment request <span>↗</span></button>
+        <p class="form-note">This form is for non-urgent requests. If you have severe difficulty breathing or swallowing, call 999 or attend your nearest emergency department.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section-tight bg-soft">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><i></i> FINDING THE CLINIC</div>
+          <h2>Easy to reach,<br><em>easy to park.</em></h2>
+        </div>
+        <p>We are on Harrogate Road in Chapel Allerton, a short bus ride from Leeds city centre.</p>
+      </div>
+      <div class="map-card">
+        <iframe title="Map showing Auralis ENT Clinic in Chapel Allerton, Leeds" src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5480%2C53.8180%2C-1.5080%2C53.8380&amp;layer=mapnik&amp;marker=53.8280%2C-1.5280" loading="lazy"></iframe>
+        <div class="map-meta">
+          <span><strong>Auralis ENT Clinic</strong> · 18 Harrogate Road, Chapel Allerton, Leeds LS7 3PD</span>
+          <span>Bus routes 2, 3 and 36 · Free patient parking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><i></i> OTHER WAYS TO REACH US</div>
+          <h2>The right door,<br><em>first time.</em></h2>
+        </div>
+        <p>For records, billing or a quick question, these direct contacts are usually faster.</p>
+      </div>
+      <div class="contact-cards">
+        <article class="contact-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></div>
+          <h3>Records &amp; letters</h3>
+          <p>Request a copy of your clinic letter or ask for a correction.</p>
+          <p class="mt-4"><a href="mailto:records@auralisclinic.com">records@auralisclinic.com</a></p>
+        </article>
+        <article class="contact-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20"></path></svg></div>
+          <h3>Billing &amp; insurance</h3>
+          <p>Invoices, insurer pre-authorisation and payment plan questions.</p>
+          <p class="mt-4"><a href="mailto:billing@auralisclinic.com">billing@auralisclinic.com</a></p>
+        </article>
+        <article class="contact-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9Z"></path></svg></div>
+          <h3>Out of hours</h3>
+          <p>For urgent medical advice when the clinic is closed, call NHS 111.</p>
+          <p class="mt-4"><a href="tel:111">Call 111</a></p>
+        </article>
+      </div>
+      <div class="emergency-strip mt-6">
+        <div>
+          <h3>If this is an emergency</h3>
+          <p>Severe breathing difficulty, uncontrolled bleeding or a rapidly swelling neck needs immediate emergency care. Call 999 or go to A&amp;E.</p>
+        </div>
+        <a class="button button-outline" href="tel:999">Emergency guidance <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><i></i> BEFORE YOU CALL</div>
+          <h2>Quick answers<br><em>to common questions.</em></h2>
+        </div>
+        <p>Four things patients ask most often before their first visit.</p>
+      </div>
+      <div class="faq-section-grid">
+        <div class="faq-column">
+          <div class="faq-item open">
+            <button class="faq-question" type="button" aria-expanded="true"><span>Do I need a GP referral?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">No referral is needed for most private appointments. If your insurer requires one, we can guide you through the paperwork before you book.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>How soon will I be seen?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Most appointments are available within 5–10 working days. Urgent concerns are triaged by our clinical team and may be seen sooner.</div></div>
+          </div>
+        </div>
+        <div class="faq-column">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Can I bring someone with me?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Yes. A relative or friend is welcome in the consultation, especially if they help you remember details or ask questions.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>What should I bring?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">A list of medicines, any previous clinic letters or hearing tests, and your insurance details if applicable. Arrive five minutes early.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="appointment-banner">
+    <div class="container appointment-inner">
+      <div>
+        <div class="eyebrow"><i></i> STILL NOT SURE?</div>
+        <h2>A two-minute call<br><em>can save a week.</em></h2>
+      </div>
+      <a class="button button-primary" href="tel:+441134960720">Call reception <span>↗</span></a>
+    </div>
+  </section>
+</main>
+<div data-site-footer></div>
+<script src="../src/js/data.js"></script>
+<script src="../src/js/navbar.js"></script>
+<script src="../src/js/pages.js"></script>
+<script src="../src/js/form-validation.js"></script>
+</body>
+</html>

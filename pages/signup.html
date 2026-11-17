@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create an Auralis patient account to manage appointments, letters and care plans.">
+  <title>Create a patient account | Auralis ENT Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="../src/js/theme-init.js"></script>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="stylesheet" href="../src/css/pages.css">
+</head>
+<body>
+<div data-site-header></div>
+<main>
+  <section class="page-hero hero-auth">
+    <div class="container page-hero-content">
+      <div class="eyebrow light"><i></i> PATIENT PORTAL</div>
+      <h1>One account.<br><em>Less to remember.</em></h1>
+      <p>Keep your appointments, letters and care plans together in one secure place.</p>
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span>/</span><span>Create account</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="auth-grid">
+        <div class="auth-side">
+          <div class="eyebrow light"><i></i> JOIN THE PORTAL</div>
+          <h2>Built for patients,<br><em>not paperwork.</em></h2>
+          <p>Create an account once, then find everything you need without digging through emails or drawers of letters.</p>
+          <ul class="check-list" style="margin-top:22px">
+            <li style="color:#c9dbe3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>View upcoming appointments</li>
+            <li style="color:#c9dbe3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Download clinic letters and plans</li>
+            <li style="color:#c9dbe3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Update contact and communication preferences</li>
+          </ul>
+        </div>
+
+        <form class="auth-card" id="signup-form" aria-labelledby="signup-title">
+          <div class="eyebrow"><i></i> CREATE YOUR ACCOUNT</div>
+          <h2 id="signup-title">Hello there.</h2>
+          <p>Register with the same details you use at the clinic. This demonstration does not create a real account.</p>
+          <div class="form-status" data-form-status hidden></div>
+          <label for="signup-name">Full name
+            <input type="text" id="signup-name" name="name" placeholder="Your full name" required autocomplete="name">
+          </label>
+          <div class="form-row">
+            <label for="signup-email">Email address
+              <input type="email" id="signup-email" name="email" placeholder="name@example.com" required autocomplete="email">
+            </label>
+            <label for="signup-phone">Phone number
+              <input type="tel" id="signup-phone" name="phone" placeholder="+44 7000 000000" required autocomplete="tel">
+            </label>
+          </div>
+          <label for="signup-password">Password
+            <input type="password" id="signup-password" name="password" placeholder="At least 8 characters" required minlength="8" autocomplete="new-password">
+          </label>
+          <label for="signup-confirm">Confirm password
+            <input type="password" id="signup-confirm" name="confirm-password" placeholder="Repeat your password" required minlength="8" data-match="signup-password" autocomplete="new-password">
+          </label>
+          <label class="consent" for="signup-terms">
+            <input type="checkbox" id="signup-terms" name="terms" required>
+            <span>I agree to the <a href="Terms-of-service.html">terms of service</a> and <a href="Privacy-policy.html">privacy policy</a>.</span>
+          </label>
+          <label class="consent" for="signup-marketing">
+            <input type="checkbox" id="signup-marketing" name="marketing">
+            <span>Send me the Auralis Note once a month. Optional.</span>
+          </label>
+          <button class="button button-primary submit-button" type="submit">Create account <span>↗</span></button>
+          <p class="auth-alt">Already registered? <a href="login.html">Sign in instead</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight bg-soft">
+    <div class="container">
+      <div class="section-heading center">
+        <div>
+          <div class="eyebrow"><i></i> SAFE BY DESIGN</div>
+          <h2>Your details,<br><em>properly protected.</em></h2>
+        </div>
+        <p>The portal uses the same security standards described in our privacy policy.</p>
+      </div>
+      <div class="grid cols-3">
+        <article class="info-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+          <h3>Encrypted access</h3>
+          <p>Secure connections and multi-factor authentication for staff accounts.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+          <h3>No advertising</h3>
+          <p>Your clinical information is never used for third-party advertising.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></div>
+          <h3>Your choices</h3>
+          <p>Opt in or out of newsletters at any time without affecting your care.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="eyebrow"><i></i> A PERSON, NOT A TICKET</div>
+        <h2>If the form feels<br><em>too much, call us.</em></h2>
+        <p class="lead-text">Reception can register you over the phone or check whether an account already exists. We are happy to do the typing.</p>
+        <div class="grid cols-2 mt-5">
+          <div class="info-card"><h3>Reception</h3><p>+44 113 496 0720<br>Monday to Friday, 8:30am – 6:00pm</p></div>
+          <div class="info-card"><h3>Email</h3><p>hello@auralisclinic.com<br>We reply within one working day.</p></div>
+        </div>
+      </div>
+      <div class="media-frame">
+        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1000&q=85" alt="Auralis reception team assisting a patient with account registration">
+        <div class="image-label"><span>✳</span><div><strong>Help is close</strong><small>No automated maze</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="appointment-banner">
+    <div class="container appointment-inner">
+      <div>
+        <div class="eyebrow"><i></i> ALREADY REGISTERED?</div>
+        <h2>Sign in and pick<br><em>up where you left.</em></h2>
+      </div>
+      <a class="button button-primary" href="login.html">Go to login <span>↗</span></a>
+    </div>
+  </section>
+</main>
+<div data-site-footer></div>
+<script src="../src/js/navbar.js"></script>
+<script src="../src/js/pages.js"></script>
+<script src="../src/js/form-validation.js"></script>
+</body>
+</html>

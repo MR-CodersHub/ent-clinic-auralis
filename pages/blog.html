@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practical ear, nose, throat and hearing notes from the Auralis clinicians. Search and filter the Auralis journal.">
+  <title>Journal | Auralis ENT Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="../src/js/theme-init.js"></script>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link rel="stylesheet" href="../src/css/pages.css">
+</head>
+<body>
+<div data-site-header></div>
+<main>
+  <section class="page-hero hero-blog">
+    <div class="container page-hero-content">
+      <div class="eyebrow light"><i></i> THE AURALIS JOURNAL</div>
+      <h1>Useful notes for<br><em>everyday health.</em></h1>
+      <p>Clear, practical writing from our consultants and audiologists. No scare stories, no miracle cures — just what the evidence supports.</p>
+      <div class="breadcrumbs"><a href="../index.html">Home</a><span>/</span><span>Journal</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><i></i> EDITOR’S PICK</div>
+          <h2>Start with<br><em>this one.</em></h2>
+        </div>
+        <p>Our most recent long-form article, chosen for practical value.</p>
+      </div>
+      <div id="featured-post">
+        <p class="muted">Loading the latest article…</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight bg-soft">
+    <div class="container">
+      <div class="blog-toolbar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+          <input type="search" id="blog-search" placeholder="Search by topic, author or keyword…" aria-label="Search the journal">
+        </div>
+        <div class="filter-pills" id="blog-filters" role="group" aria-label="Filter articles by category"></div>
+        <div class="select-wrap">
+          <label class="sr-only" for="blog-sort">Sort articles</label>
+          <select id="blog-sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="az">Title A–Z</option>
+          </select>
+        </div>
+        <span class="results-count" id="blog-results">6 articles</span>
+      </div>
+      <div class="blog-grid" id="blog-grid"></div>
+      <div class="empty-state" id="blog-empty" hidden>No articles match that search. Try a broader term or choose “All”.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading center">
+        <div>
+          <div class="eyebrow"><i></i> BROWSE BY TOPIC</div>
+          <h2>Follow your<br><em>curiosity.</em></h2>
+        </div>
+        <p>Six steady themes, written for real life rather than search engines.</p>
+      </div>
+      <div class="category-cards">
+        <a class="category-card" href="blog.html?category=Sinus%20Health"><strong>Sinus Health</strong><span>Drainage, pressure and breathing</span></a>
+        <a class="category-card" href="blog.html?category=Hearing%20Health"><strong>Hearing Health</strong><span>Tests, devices and everyday listening</span></a>
+        <a class="category-card" href="blog.html?category=Sleep%20Health"><strong>Sleep Health</strong><span>Snoring, rest and upper airway care</span></a>
+        <a class="category-card" href="blog.html?category=Allergies"><strong>Allergies</strong><span>Triggers, seasons and calm plans</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-band">
+    <div class="container newsletter-inner">
+      <div>
+        <div class="eyebrow light"><i></i> THE AURALIS NOTE</div>
+        <h2>One useful read.<br><em>Once a month.</em></h2>
+        <p>Clinic updates, seasonal advice and new journal articles. No noise, no selling your details.</p>
+      </div>
+      <div>
+        <form id="newsletter-form" class="newsletter-form" data-newsletter-form>
+          <div class="field">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required autocomplete="email">
+            <div class="newsletter-success" data-newsletter-success hidden></div>
+          </div>
+          <button class="button button-primary" type="submit">Subscribe <span>↗</span></button>
+        </form>
+        <p class="small muted mt-4" style="color:#b9cdd6">By subscribing you agree to our <a href="Privacy-policy.html" style="color:#9ad9df">privacy policy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="appointment-banner">
+    <div class="container appointment-inner">
+      <div>
+        <div class="eyebrow"><i></i> A QUESTION THE JOURNAL CANNOT ANSWER?</div>
+        <h2>Ask a real<br><em>clinician.</em></h2>
+      </div>
+      <a class="button button-primary" href="contact.html#appointment">Book a consultation <span>↗</span></a>
+    </div>
+  </section>
+</main>
+<div data-site-footer></div>
+<script src="../src/js/data.js"></script>
+<script src="../src/js/navbar.js"></script>
+<script src="../src/js/blog.js"></script>
+<script src="../src/js/pages.js"></script>
+<script src="../src/js/form-validation.js"></script>
+</body>
+</html>
